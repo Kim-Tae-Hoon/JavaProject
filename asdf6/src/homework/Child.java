@@ -1,7 +1,7 @@
 class Parent{
   Parent()
   {
-  System,out.println("Parent");
+  System.out.println("Parent");
   }
 }
 Public clas Child  extends Parent
