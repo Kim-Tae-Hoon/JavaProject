@@ -1,1 +1,53 @@
+import java.awt.BorderLayout;
+import java.awt.*;
 
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+import javax.swing.JTextField;
+
+public class ScoreGui extends JFrame {
+	public ScoreGui() {
+		JFrame f = new JFrame();
+		
+		JButton btn1 = new JButton("확인");
+		JButton btn2 = new JButton("삭제");
+		JButton btn3 = new JButton("수정");
+		
+		Button btn_1 = new Button("이름");
+		btn_1.setSize(70, 70);		
+		Button btn_2 = new Button("국어 점수");
+		btn_2.setSize(70, 70);
+		Button btn_3 = new Button("수학 점수");
+		btn_3.setSize(70, 70);
+		Button btn_4 = new Button("영어 점수");
+		btn_4.setSize(70, 70);
+		
+		JTextField txt1 = new JTextField(15); 
+		JTextField txt2 = new JTextField(15);
+		JTextField txt3 = new JTextField(15);
+		JTextField txt4 = new JTextField(15);
+		
+		f.add(btn_1);
+		f.add(txt1);
+		f.add(btn1);
+		
+		f.add(btn_2);
+		f.add(txt2);
+		f.add(btn2);
+		
+		f.add(btn_3);
+		f.add(txt3);
+		f.add(btn3);
+		
+		f.add(btn_4);
+		f.add(txt4);
+		
+		f.setSize(255, 255);
+		f.setTitle("성적");
+		f.setLayout(new GridLayout(4,4,5,5));
+		
+		
+		f.setVisible(true);
+	}
+}
