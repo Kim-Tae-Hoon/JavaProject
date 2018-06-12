@@ -51,3 +51,7 @@ public class ScoreGui extends JFrame {
 		f.setVisible(true);
 	}
 }
+public static void main(String[] args) {
+		ScoreGui s = new ScoreGui();
+
+	}
