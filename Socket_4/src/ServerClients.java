@@ -23,6 +23,9 @@ public class ServerClients{
 	static JTextField tf;
 	static DataOutputStream out;
 	
+	ServerDAO dao;
+	ServerDTO dto;
+	
 	public static void main(String args[]){
 		nick = JOptionPane.showInputDialog("?");
 		FrClient f = new FrClient(nick);
